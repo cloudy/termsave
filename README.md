@@ -2,8 +2,7 @@
 
 Simple save/loader for environment variables.
 
-Add the following to bash_aliases and source it:
-    alias termsave=". /path/to/git/project/termsave/termsave"
+Add the following to bash_aliases and source it: `alias termsave=". /path/to/git/project/termsave/termsave"`
 
 To save a 'session':
 

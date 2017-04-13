@@ -9,9 +9,9 @@ fi
 if [[ $1 == "save" || $1 == "-s" ]]; then
 	declare -p | egrep -v \
 	"BASH_VERSINFO|BASHOPTS|BASHPID|BASH_COMPLETION_COMPAT_DIR|BASH_REMATCH|EUID|PPID|UID|SHELLOPTS" \
-	> ~/.termsaverc/$2
+	> "$TSRCDIR"/$2
 
 elif [[ $1 == "load" || $1 == "-l" ]]; then
-	source ~/.termsaverc/$2
+	source "$TSRCDIR"/$2
 
 fi
